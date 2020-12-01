@@ -6,7 +6,7 @@ Our project aims to assist job seekers negotiate salaries by predicting what sal
 ### Description of files
 - `scraper.py` - Scrapes the data from indeed.com
 - `cleaning_data.py` - Loads the unclean data and performs all text cleaning and transformation
-- `modelling.py` - Loads cleaned data with tfidf and topic modelling results and tests various machine learning models
+- `modelling.py` - Loads cleaned data with tfidf and topic modelling results, tests various machine learning models with their statistical significance
 - App: Contains HTML files and `app.py` file  which implements Flask & Plotly to create the web app
 - Data: Contains CSV files of data and `vocab.txt` - Contains the 7000 skills of vocabulary for tfidf vectorization 
 - Model: Contains the Machine Learning Pipeline python script file to perform all the training and testing of the data using Gradient boosting (our final model)
