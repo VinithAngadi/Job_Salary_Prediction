@@ -9,7 +9,7 @@ Our project aims to assist job seekers negotiate salaries by predicting what sal
 - `modelling.py` - Loads cleaned data with tfidf and topic modelling results and tests various machine learning models
 - App: Contains HTML files and `app.py` file  which implements Flask & Plotly to create the web app
 - Data: Contains CSV files of data and `vocab.txt` - Contains the 7000 skills of vocabulary for tfidf vectorization 
-- Model: Contains the Machine Learning Pipeline python script file to perform all the training and testing of the data using Random forest (our final model)
+- Model: Contains the Machine Learning Pipeline python script file to perform all the training and testing of the data using Gradient boosting (our final model)
 
 ### List of Python libraries used
 `nltk`
