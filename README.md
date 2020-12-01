@@ -38,6 +38,8 @@ This project contains a web app that asks for a message from a potential user wh
 
 ### Snapshots
 <p align="center">
-  <img src="./img/Capture.PNG" alt="Web App" width="738">
+  <img src="./snaps/1.PNG" alt="Web App" width="738">
+  <img src="./snaps/2.PNG" alt="Web App" width="738">
 </p>
+
 
