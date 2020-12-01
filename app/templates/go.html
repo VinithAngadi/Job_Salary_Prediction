@@ -1,0 +1,19 @@
+{% extends "master.html" %}
+{% block title %}Results{% endblock %}
+
+{% block message %}
+    <hr />
+    <h2 class="text-center">Job Description input by the user</h2>
+    <p class="text-center"><i>{{query}}</i></p>
+    <h2 class="text-center">Job Location input by the user</h2>
+    <p class="text-center"><i>{{state}}</i></p>
+{% endblock %}
+
+{% block content %}
+    <h1 class="text-center">The Estimated Salary (in USD)</h1>
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-success text-center">{{salary}}</li>
+        </div>
+    </div>
+
+{% endblock %}
