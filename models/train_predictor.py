@@ -8,6 +8,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
+from sklearn import ensemble
 from sklearn.model_selection import GridSearchCV
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import mean_absolute_error
@@ -106,7 +107,9 @@ def NMF_cluster(data, min_n, max_n, vocab):
     return tfidf_skills_df, tfidf_vectorizer, nmf
 
 def build_model():
-    model = RandomForestRegressor(max_features = 1400, max_depth = 60, n_estimators = 450, random_state = 0)
+#     model = RandomForestRegressor(max_features = 1400, max_depth = 60, n_estimators = 450, random_state = 0)
+    model = ensemble.GradientBoostingRegressor(learning_rate = 0.1, max_depth = 10, n_estimators = 1000, random_state = 0)
+
 
     return model
 
