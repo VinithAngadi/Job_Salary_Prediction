@@ -25,7 +25,7 @@ Our project aims to assist job seekers negotiate salaries by predicting what sal
 ### Instructions:
 1. Run the following commands in the project's root directory to set up your database and model.
 
-    - To run ML pipeline that trains classifier and saves
+    - To run ML pipeline that trains the model and saves
         `python models/train_predictor.py data/Temp.csv models/predictor.pkl data/vocab.txt models/tfidf.pkl models/nmf.pkl`
 
 2. Run the following command in the app's directory to run your web app.
