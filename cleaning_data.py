@@ -85,7 +85,7 @@ def get_salary(salaries_list):
 
 
 
-def clean_job_description(df_job_desc):
+def clean_job_desc(df_job_desc):
 
     # Convert to lower case
     df_job_desc['job_description_lower'] = [x.lower() for x in df['job_description']]
@@ -105,6 +105,6 @@ df = df[df['Salary'] != 'None']
 df.dropna(axis = 0, inplace = True)
 df['States'] = get_states(list(df['Location']))
 df['Salary'] = get_salary(list(df['Salary']))
-df = clean_job_description(df)
+df = clean_job_desc(df)
 
 df.to_csv('Final_cleaned_data.csv')
